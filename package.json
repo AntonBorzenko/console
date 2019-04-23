@@ -1,0 +1,18 @@
+{
+  "name": "PrometheusController",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts-watch": "tsc --watch",
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.js --mode=development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "chartjs-plugin-streaming": "^1.8.0"
+  }
+}

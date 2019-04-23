@@ -1,0 +1,20 @@
+<!doctype html>
+<canvas id="main"></canvas>
+<script src="./dist/bundle.js"></script>
+<script>
+chart = new PrometheusChart(
+    document.getElementById('main'),
+    [
+        {
+            prometheusQuery: 'mongoose_duration_mean',
+            label : 'Duration'
+        }
+    ],
+    {
+        totalDuration : 60000,
+        discretizationTime : 1000,
+        additionalChartDelay: 5000,
+    }
+);
+
+</script>
